@@ -1,6 +1,6 @@
 # Node JS Mini Message Board
 
-This is a mini message board Node.js Express project. It is based on The ODIN Project's [Node JS Mini Message Board](https://www.theodinproject.com/lessons/nodejs-mini-message-board) tutorial from the NodeJS course.
+This is an express generator mini message board Node.js Express project. It is based on The ODIN Project's [Node JS Mini Message Board](https://www.theodinproject.com/lessons/nodejs-mini-message-board) tutorial from the NodeJS course.
 
 ## Installation
 
