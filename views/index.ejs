@@ -2,10 +2,30 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+    <a href="/new">Add new message</a>
+
+    <ul>
+      <% messages.forEach((message) => { %>
+      <li>
+        <h2><%= message.text %></h2>
+        <p><%= message.user %></p>
+
+        <h4>
+          <!-- Date -->
+          <%= message.added.toLocaleString('default', { month: 'long' }) %> <%=
+          message.added.getDate() %>,
+
+          <!-- Time -->
+          <%= message.added.toLocaleTimeString('default', { hour: '2-digit',
+          minute: '2-digit' }) %>
+        </h4>
+      </li>
+      <% }) %>
+    </ul>
   </body>
 </html>
